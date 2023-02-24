@@ -1,0 +1,35 @@
+# Source code
+*.css             text diff=css
+*.htm             text diff=html
+*.html            text diff=html
+*.js              text eol=lf
+*.jsx             text eol=lf
+*.json            text eol=lf
+
+# Configs
+*.conf            text
+*.config          text
+.env              text
+.gitattributes    text
+.gitconfig        text
+*.lock            text -diff
+package.json      text eol=lf
+package-lock.json text eol=lf -diff
+.prettierrc       text
+yarn.lock         text -diff
+*.toml            text
+*.yaml            text
+Dockerfile        text
+
+# Graphics
+*.ai              binary
+*.bmp             binary
+*.gif             binary
+*.ico             binary
+*.jpg             binary
+*.jpeg            binary
+*.pdf             binary
+*.png             binary
+*.psd             binary
+*.svg             text
+*.webp            binary
