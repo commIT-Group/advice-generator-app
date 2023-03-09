@@ -10,8 +10,8 @@
 /* variable declaration */
 :root {
   /* colors */
-  --p-cyan: hsl(193, 38%, 86%) /* short for primary: light cyan */
-  --p-green: hsl(150, 100%, 66%) /* short for primary: neon green */
+  --p-cyan: hsl(193, 38%, 86%); /* short for primary: light cyan */
+  --p-green: hsl(150, 100%, 66%); /* short for primary: neon green */
   --n-blue: hsl(217, 19%, 38%); /* neutral: greyish-blue */
   --n-blue-gray-dark: hsl(217, 19%, 24%); /* neutral: dark greyish-blue */
   --n-blue-dark: hsl(218, 23%, 16%); /* neutral: dark blue */
