@@ -29,8 +29,28 @@ body {
   place-items: center;
   font-family: "Manrope", sans-serif;
   font-weight: 800;
+  color: var(--p-cyan);
+  background-color: var(--n-blue-dark);
+position: relative;
 }
 
+main {
+  background-color: var(--n-blue-gray-dark);
+}
+
+#dice-icon {
+  background-color: var(--p-green);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+#dice-icon:hover,
+#dice-icon:active {
+  box-shadow: 0px 0px 40px var(--p-green);
+}
 
 /* footer styles */
 footer {
