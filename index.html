@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Advice generator app</title>
+    <title>Frontend Mentor Challenge | Advice generator app</title>
+  </head>
+  <body>
+    <main>
+      <div id="main-card">
+        <hgroup>
+          <h1 id="Advice">Advice</h1> #<!-- Advice ID goes here, change it to h1 @panos0123 -->
+          <p id="advice-text">"<!-- Advice text goes here -->"</p>
+        </hgroup>
+        <picture>
+          <!-- used this element to change the displayed picture based on the screen width -->
+          <source media="(min-width: 1440px)" srcset="./images/pattern-divider-desktop.svg"> <!-- display wider divider on desktop -->
+          <img src="./images/pattern-divider-mobile.svg"> <!-- as a fallback, display the one that's more narrow -->
+        </picture>
+        <div id="dice-icon">
+          <img src="./images/icon-dice.svg">
+        </div>
+      </div>
+    </main>
 
-</head>
-<body>
-  <main>
-    <div id="main-card">
-    Advice #<!-- Advice ID goes here -->
-    "<!-- Advice text goes here -->"
-    </div>
-    <div id="dice-icon">
-      <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/>
-      </svg>
-    </div>
-  </main>
-
-  <footer>
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
-    <p>Coded by <a href="https://github.com/commIT-Group">commIT Group</a>.</p>
-  </footer>
-</body>
+    <footer>
+      <p class="footer-text">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.
+      </p>
+      <p class="footer-text">
+        Coded by <a href="https://github.com/commIT-Group">commIT Group</a>.
+      </p>
+    </footer>
+  </body>
 </html>
