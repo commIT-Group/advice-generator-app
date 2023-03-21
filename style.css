@@ -25,17 +25,26 @@ html {
 }
 
 body {
+  /* layout */
   display: grid;
   place-items: center;
+  position: relative;
+  /* visual */
   font-family: "Manrope", sans-serif;
   font-weight: 800;
   color: var(--p-cyan);
   background-color: var(--n-blue-dark);
-position: relative;
 }
 
 main {
   background-color: var(--n-blue-gray-dark);
+}
+
+h1 {
+  font-family: inherit;
+  color: var(--p-green);
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
 #dice-icon {
@@ -45,6 +54,14 @@ main {
   border-radius: 50%;
   display: grid;
   place-items: center;
+  cursor: pointer;
+}
+
+/* Don't select images that are just website layout */
+#dice-icon,
+picture {
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 #dice-icon:hover,

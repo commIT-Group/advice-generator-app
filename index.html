@@ -17,17 +17,20 @@
   <body>
     <main>
       <div id="main-card">
-        <hgroup>
-          <h1 id="Advice">Advice</h1> #<!-- Advice ID goes here, change it to h1 @panos0123 -->
-          <p id="advice-text">"<!-- Advice text goes here -->"</p>
-        </hgroup>
+        <h1>Advice #</h1>
+        <p id="advice-text">"<!-- Advice text goes here -->"</p>
         <picture>
           <!-- used this element to change the displayed picture based on the screen width -->
-          <source media="(min-width: 1440px)" srcset="./images/pattern-divider-desktop.svg"> <!-- display wider divider on desktop -->
-          <img src="./images/pattern-divider-mobile.svg"> <!-- as a fallback, display the one that's more narrow -->
+          <source
+            media="(min-width: 1440px)"
+            srcset="./images/pattern-divider-desktop.svg"
+          />
+          <!-- display wider divider on desktop -->
+          <img src="./images/pattern-divider-mobile.svg" />
+          <!-- as a fallback, display the one that's more narrow -->
         </picture>
         <div id="dice-icon">
-          <img src="./images/icon-dice.svg">
+          <img alt="Get random advice" src="./images/icon-dice.svg" />
         </div>
       </div>
     </main>
