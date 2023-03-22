@@ -19,6 +19,7 @@
 
   /* fonts */
   --fs-quote: 1.75rem; /* font size: 28px */
+  --fs-title: 1.75rem;
 }
 
 html {
@@ -37,6 +38,14 @@ position: relative;
 
 main {
   background-color: var(--n-blue-gray-dark);
+}
+
+h1 {
+  font-size: var(--fs-title);
+}
+
+#advice-text {
+  font-size: var(--fs-quote);
 }
 
 #dice-icon {
