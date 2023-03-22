@@ -9,7 +9,7 @@ function getAdvice() {
     .then(data => {
         const advice = data.slip.advice;
         const adviceId = data.slip.id;
-        document.getElementById("advice").textContent = " ".concat(advice, " ");
+        document.getElementById("advice-text").textContent = " ".concat(advice, " ");
         document.querySelector("h1").textContent = "ADVICE #".concat(adviceId);
       }  
     )
@@ -18,4 +18,4 @@ function getAdvice() {
     });
 }
 document.addEventListener("DOMContentLoaded", getAdvice); // for first advice
-document.addEventListener("click", getAdvice);
+button.addEventListener("click", getAdvice);
