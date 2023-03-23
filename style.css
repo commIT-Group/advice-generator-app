@@ -1,12 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
 /* minimal CSS reset */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
+
+img, picture {
+  display: block;
+  max-width: 100%;
+}
+/* end of minimal reset */
 
 /* variable declaration */
 :root {
