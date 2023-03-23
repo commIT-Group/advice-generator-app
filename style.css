@@ -38,10 +38,6 @@ img, picture {
   --fs-title: 1.75rem;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   /* layout */
   display: grid;
