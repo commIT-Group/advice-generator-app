@@ -17,22 +17,22 @@ body {
 /* END of developing / debugging styles */
 
 /* minimal CSS reset */
-html {
-  box-sizing: border-box;
-  font-size: 100%;
-}
-
-html,
-body {
-  height: 100%;
-}
-
 *,
 *::before,
 *::after {
   margin: 0;
   box-sizing: inherit;
 }
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}  
+
+html,
+body {
+  height: 100%;
+}  
 
 img, picture {
   display: block;
