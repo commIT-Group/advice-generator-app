@@ -52,6 +52,9 @@ img, picture {
   /* fonts */
   --fs-quote: 1.75rem; /* font size: 28px */
   --fs-title: 1.75rem;
+
+  /* layout */
+  --button-size: 64px;
 }
 
 body {
@@ -67,26 +70,34 @@ body {
 }
 
 #main-card {
+  /* layout */
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  /* visual */
   background-color: var(--n-blue-gray-dark);
+  border-radius: 0.5rem;
 }
 
 h1 {
+  /* layout */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  /* visual */
   font-family: inherit;
   color: var(--p-green);
   font-size: 0.75rem;
   text-transform: uppercase;
 }
 
-#new-advice {
-  background-color: var(--p-green);
-  border: 0;
-  padding: 0;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
+#advice-text {
+  /* layout */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* visual */
 }
 
 /* Don't select images that are just website layout */
@@ -94,6 +105,25 @@ h1 {
 picture {
   -webkit-user-select: none;
   user-select: none;
+}
+
+#new-advice {
+  /* layout */
+  width: var(--button-size);
+  height: var(--button-size);
+  display: grid;
+  place-items: center;
+  position: relative;
+  /* Calculate negative of half of button size, to place it 
+  halfway outside the box */
+  bottom: calc(-1 * var(--button-size) / 2);
+  
+  /* visual */
+  background-color: var(--p-green);
+  border-radius: 50%;
+  border: 0; /* Override browser default */
+  padding: 0; /* Override browser default */
+  cursor: pointer;
 }
 
 #new-advice:hover,
