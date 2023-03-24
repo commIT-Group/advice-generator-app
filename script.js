@@ -1,5 +1,7 @@
 const button = document.getElementById("new-advice");
 
+// API function
+
 function getAdvice() {
   fetch("https://api.adviceslip.com/advice")
     .then((response) => {
@@ -18,5 +20,8 @@ function getAdvice() {
       console.error(error);
     });
 }
+
+// Event listeners
+
 document.addEventListener("DOMContentLoaded", getAdvice); // for first advice
 button.addEventListener("click", getAdvice);
