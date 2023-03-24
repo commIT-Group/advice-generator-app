@@ -51,7 +51,7 @@ img, picture {
 
   /* fonts */
   --fs-quote-d: 1.75rem; /* font size: 28px on dekstop */
-  --fd-quote-m: 1.5rem; /* font size: 24px on mobile */
+  --fs-quote-m: 1.5rem; /* font size: 24px on mobile */
   --fs-title: 0.688rem; /* font size: 11px */
 }
 
