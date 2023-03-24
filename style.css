@@ -66,7 +66,7 @@ body {
   background-color: var(--n-blue-dark);
 }
 
-main {
+#main-card {
   background-color: var(--n-blue-gray-dark);
 }
 
