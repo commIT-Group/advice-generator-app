@@ -68,6 +68,20 @@ body {
 
 #main-card {
   background-color: var(--n-blue-gray-dark);
+  display: grid;
+  place-items: center;
+  padding-top: 40px; /*change this to responsive units */
+  width: 91.5vw;
+  height: 315px;
+}
+
+@media screen and (min-width: 700px) {
+  #main-card {
+    padding-top: 48px;
+    width: 37.5vw;
+    max-width: 540px;
+    height: 332px;
+  }
 }
 
 h1 {
