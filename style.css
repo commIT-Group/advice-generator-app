@@ -19,7 +19,7 @@ body {
 /* minimal CSS reset */
 html {
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: 16px;
 }
 
 html,
@@ -50,8 +50,9 @@ img, picture {
   --n-blue-dark: hsl(218, 23%, 16%); /* neutral: dark blue */
 
   /* fonts */
-  --fs-quote: 1.75rem; /* font size: 28px */
-  --fs-title: 1.75rem;
+  --fs-quote-d: 1.75rem; /* font size: 28px on dekstop */
+  --fd-quote-m: 1.5rem; /* font size: 24px on mobile */
+  --fs-title: 0.688rem; /* font size: 11px */
 }
 
 body {
@@ -85,10 +86,27 @@ body {
 }
 
 h1 {
-  font-family: inherit;
+  /* font-family: inherit; unnecessary*/
   color: var(--p-green);
-  font-size: 0.75rem;
+  font-size: var(--fs-title);
   text-transform: uppercase;
+  line-height: 0.938rem;
+  letter-spacing: 3.45714px;
+}
+
+p #advice-text {
+  color: var(--p-cyan);
+  font-size: var(--fs-quote-m);
+  line-height: 33px;
+  letter-spacing: -0.257143px;
+}
+
+@media screen and (min-width: 700px) {
+  p #advice-text {
+    font-size: var(--fs-quote-d);
+    line-height: 38px;
+    letter-spacing: -0.3px;
+  }
 }
 
 #new-advice {
