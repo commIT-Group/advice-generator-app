@@ -1,11 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
+/* Developing / Debugging styles */
+*,
+*::before,
+*::after {
+  outline: 1px solid papayawhip;
+}
+
+html {
+  border: 2px solid gold;
+}
+
+body {
+  border: 2px solid blue;
+}
+/* END of developing / debugging styles */
+
 /* minimal CSS reset */
 *,
 *::before,
 *::after {
   margin: 0;
+  box-sizing: inherit;
 }
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}  
+
+html,
+body {
+  height: 100%;
+}  
+
+img, picture {
+  display: block;
+  max-width: 100%;
+}
+/* end of minimal reset */
 
 /* variable declaration */
 :root {
@@ -18,37 +51,53 @@
 
   /* fonts */
   --fs-quote: 1.75rem; /* font size: 28px */
-}
-
-html {
-  font-size: 16px;
+  --fs-title: 1.75rem;
 }
 
 body {
+  /* layout */
   display: grid;
   place-items: center;
+  position: relative;
+  /* visual */
   font-family: "Manrope", sans-serif;
   font-weight: 800;
   color: var(--p-cyan);
   background-color: var(--n-blue-dark);
-position: relative;
 }
 
 main {
   background-color: var(--n-blue-gray-dark);
 }
 
-#dice-icon {
+h1 {
+  font-family: inherit;
+  color: var(--p-green);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+#new-advice {
   background-color: var(--p-green);
+  border: 0;
+  padding: 0;
   width: 64px;
   height: 64px;
   border-radius: 50%;
   display: grid;
   place-items: center;
+  cursor: pointer;
 }
 
-#dice-icon:hover,
-#dice-icon:active {
+/* Don't select images that are just website layout */
+#new-advice,
+picture {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#new-advice:hover,
+#new-advice:active {
   box-shadow: 0px 0px 40px var(--p-green);
 }
 
