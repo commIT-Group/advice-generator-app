@@ -1,8 +1,12 @@
 const button = document.getElementById("new-advice");
 
-// API function
+// Event listeners
+document.addEventListener("DOMContentLoaded", getAdvice); // for first advice
+button.addEventListener("click", getAdvice); // for subsequent advices
 
+// API function
 function getAdvice() {
+  
   fetch("https://api.adviceslip.com/advice")
     .then((response) => {
       return response.json(); // this will convert response to json
@@ -21,7 +25,4 @@ function getAdvice() {
     });
 }
 
-// Event listeners
 
-document.addEventListener("DOMContentLoaded", getAdvice); // for first advice
-button.addEventListener("click", getAdvice);
