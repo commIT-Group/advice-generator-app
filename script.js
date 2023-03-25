@@ -1,5 +1,7 @@
 const button = document.getElementById("new-advice");
 
+// API function
+
 function getAdvice() {
   fetch("https://api.adviceslip.com/advice")
     .then(response => {
