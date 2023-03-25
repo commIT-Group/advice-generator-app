@@ -16,10 +16,7 @@ function getAdvice() {
     .then((data) => {
       const advice = data.slip.advice;
       const adviceId = data.slip.id;
-      document.getElementById("advice-text").textContent = '"'.concat(
-        advice,
-        '"'
-      );
+      document.getElementById("advice-text").textContent = ''.concat(advice);
       document.querySelector("h1").textContent = "ADVICE #".concat(adviceId);
     })
     .catch((error) => {
