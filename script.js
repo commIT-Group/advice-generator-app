@@ -6,8 +6,10 @@ button.addEventListener("click", getAdvice); // for subsequent advices
 
 // API function
 function getAdvice() {
-  
-  fetch("https://api.adviceslip.com/advice")
+
+  const API = `https://api.adviceslip.com/advice?=${new Date().getTime()}`;
+
+  fetch(API)
     .then((response) => {
       return response.json(); // this will convert response to json
     })
