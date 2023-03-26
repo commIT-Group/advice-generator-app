@@ -27,14 +27,15 @@ body {
 html {
   box-sizing: border-box;
   font-size: 100%;
-}  
+}
 
 html,
 body {
   height: 100%;
-}  
+}
 
-img, picture {
+img,
+picture {
   display: block;
   max-width: 100%;
 }
@@ -50,7 +51,7 @@ img, picture {
   --n-blue-dark: hsl(218, 23%, 16%); /* neutral: dark blue */
 
   /* fonts */
-  --fs-quote-d: 1.75rem; /* font size: 28px on dekstop */
+  --fs-quote-d: 1.75rem; /* font size: 28px on desktop */
   --fs-quote-m: 1.5rem; /* font size: 24px on mobile */
   --fs-title: 0.688rem; /* font size: 11px */
 }
@@ -94,7 +95,7 @@ h1 {
   letter-spacing: 3.45714px;
 }
 
-p #advice-text {
+p #advice {
   color: var(--p-cyan);
   font-size: var(--fs-quote-m);
   line-height: 33px;
@@ -102,7 +103,7 @@ p #advice-text {
 }
 
 @media screen and (min-width: 700px) {
-  p #advice-text {
+  p #advice {
     font-size: var(--fs-quote-d);
     line-height: 38px;
     letter-spacing: -0.3px;
