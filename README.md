@@ -59,11 +59,12 @@ _Use this section to outline areas that you want to continue focusing on in futu
 
 ### Useful resources
 
-- [Git tutorial](https://www.atlassian.com/git/tutorials) - This git tutorial helped us all learn more about using git.
-- [Article about git branching](https://www.freecodecamp.org/news/git-branching-commands-explained/) - This article was helpful to learn more about git branching.
-- [Microsoft docs](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops) - This documentation helped us learn best practices for branching strategy.
-- [Article about code review](https://linearb.io/blog/code-review-on-github/) - This article taught us best practices regarding code review.
-- [Article about pull requests](https://linearb.io/blog/pull-request-best-practices-our-tips/) - This article helped us realize that the smaller the pull request, the easier it is to review the code.
+- [Git tutorial (Atlassian)](https://www.atlassian.com/git/tutorials) - This tutorial is an incredible resource for learning all the ins and outs of git
+- [GitHub Docs](https://docs.github.com/en) - GitHub documentation is an invaluable resource for setting up and working with git and GitHub
+- [Article about git branching (freeCodeCamp)](https://www.freecodecamp.org/news/git-branching-commands-explained/) - This article helped us learn more about branches and good commit practices
+- [Git branching strategy (Microsoft Documentation)](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops) - This article taught us best branching practices
+- [Code review on GitHub (LinearB)](https://linearb.io/blog/code-review-on-github/) - This well written, verbose article talks about best practices regarding code review on GitHub
+- [Pull request best practices (LinearB)](https://linearb.io/blog/pull-request-best-practices-our-tips/) - This article contains valuable information about how to make the best pull requests
 
 ## Authors
 
