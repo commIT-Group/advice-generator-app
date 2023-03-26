@@ -12,15 +12,18 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <title>Frontend Mentor Challenge | Advice generator app</title>
   </head>
+
   <body>
     <main>
       <div id="main-card">
         <h1>Advice #</h1>
-        <p id="advice-text">"<!-- Advice text goes here -->"</p>
+        <p id="advice">
+          "<span id="advice-text"><!-- Advice text goes here --></span>"
+        </p>
         <picture>
           <!-- used this element to change the displayed picture based on the screen width -->
           <source

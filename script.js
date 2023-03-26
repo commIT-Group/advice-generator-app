@@ -1,21 +1,24 @@
 const button = document.getElementById("new-advice");
 
+// Event listeners
+document.addEventListener("DOMContentLoaded", getAdvice); // for first advice
+button.addEventListener("click", getAdvice); // for subsequent advices
+
+// API function
 function getAdvice() {
-  fetch("https://api.adviceslip.com/advice")
-    .then(response => {
-        return response.json(); // this will convert response to json
-      }
-    )
-    .then(data => {
-        const advice = data.slip.advice;
-        const adviceId = data.slip.id;
-        document.getElementById("advice").textContent = " ".concat(advice, " ");
-        document.querySelector("h1").textContent = "ADVICE #".concat(adviceId);
-      }  
-    )
-    .catch(error => {
+  const API = `https://api.adviceslip.com/advice?=${new Date().getTime()}`;
+
+  fetch(API)
+    .then((response) => {
+      return response.json(); // this will convert response to json
+    })
+    .then((data) => {
+      const advice = data.slip.advice;
+      const adviceId = data.slip.id;
+      document.getElementById("advice-text").textContent = advice;
+      document.querySelector("h1").textContent = "ADVICE #".concat(adviceId);
+    })
+    .catch((error) => {
       console.error(error);
     });
 }
-document.addEventListener("DOMContentLoaded", getAdvice); // for first advice
-document.addEventListener("click", getAdvice);
