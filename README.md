@@ -29,6 +29,7 @@ Users should be able to:
 
 <!-- ### Visuals
 Add screenshots of out final solution and add design files for comparison -->
+
 ### Links
 
 - Solution URL: [https://github.com/commIT-Group/Advice-generator-app/tree/main](https://github.com/commIT-Group/Advice-generator-app/tree/main)
@@ -40,11 +41,17 @@ Add screenshots of out final solution and add design files for comparison -->
 
 - Semantic HTML5 markup
 - CSS custom properties
-- vanilla JavaScript
+- Vanilla JavaScript
+- Git and GitHub
 
 ### What we learned
 
-_Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge._
+- Working with APIs (fetching responses)
+- Teamwork and collaboration
+- git and GitHub
+  - git workflow (pushing, pulling, committing, merging, branching, resolving conflicts)
+  - GitHub workflow (creating merge requests, issues, reviewing code, participating in discussions)
+  - GitHub organization (groups, projects, repository and group settings, managing permissions)
 
 <!-- ### Continued development
 
@@ -59,16 +66,17 @@ _Use this section to outline areas that you want to continue focusing on in futu
 - [Article about pull requests](https://linearb.io/blog/pull-request-best-practices-our-tips/) - This article helped us realize that the smaller the pull request, the easier it is to review the code.
 
 ## Authors
+
 _List the authors and links to their profiles_
 
-* [Carlos](https://github.com/car2t)
-* [Domi](https://github.com/WitchDevelops)
+- [Carlos](https://github.com/car2t)
+- [Domi](https://github.com/WitchDevelops)
 <!-- * [James](https://github.com/RobJackTech) for now I commented out James, as I know he did some things but doesn't show up as contributor to the repo... -->
-* [Logan](https://github.com/DevLoggith)
-* [Nikki](https://github.com/nikkehtine)
-* [Panos](https://github.com/panos0123)
-* [Phil](https://github.com/timiphil)
-* [Vance](https://github.com/caesiumtea)
+- [Logan](https://github.com/DevLoggith)
+- [Nikki](https://github.com/nikkehtine)
+- [Panos](https://github.com/panos0123)
+- [Phil](https://github.com/timiphil)
+- [Vance](https://github.com/caesiumtea)
 
 ## Acknowledgments
 
