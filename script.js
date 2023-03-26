@@ -6,7 +6,6 @@ button.addEventListener("click", getAdvice); // for subsequent advices
 
 // API function
 function getAdvice() {
-
   const API = `https://api.adviceslip.com/advice?=${new Date().getTime()}`;
 
   fetch(API)
@@ -16,12 +15,10 @@ function getAdvice() {
     .then((data) => {
       const advice = data.slip.advice;
       const adviceId = data.slip.id;
-      document.getElementById("advice-text").textContent = ''.concat(advice);
+      document.getElementById("advice-text").textContent = advice;
       document.querySelector("h1").textContent = "ADVICE #".concat(adviceId);
     })
     .catch((error) => {
       console.error(error);
     });
 }
-
-
