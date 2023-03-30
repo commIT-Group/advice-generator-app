@@ -60,7 +60,12 @@ body {
   /* layout */
   display: grid;
   place-items: center;
-  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 5rem;
+  /* Carlos: Why we need this position: relative;? */
+  /* position: relative; */
+
   /* visual */
   font-family: "Manrope", sans-serif;
   font-weight: 800;
@@ -68,23 +73,33 @@ body {
   background-color: var(--n-blue-dark);
 }
 
+main {
+  padding: 0 1rem;
+  max-width: 480px;
+  height: 315px;
+}
+
 #main-card {
+  width: 100%;
+  height: 100%;
   background-color: var(--n-blue-gray-dark);
   display: grid;
   place-items: center;
   padding-top: 40px; /*change this to responsive units */
-  width: 91.5vw;
-  height: 315px;
+  /* Carlos: I fix the main width and height instead */
+  /* width: 91.5vw; */
+  /* height: 315px; */
 }
 
-@media screen and (min-width: 700px) {
+/* Carlos: It breaks the general layout */
+/* @media screen and (min-width: 700px) {
   #main-card {
     padding-top: 48px;
     width: 37.5vw;
     max-width: 540px;
     height: 332px;
   }
-}
+} */
 
 h1 {
   /* font-family: inherit; unnecessary*/
@@ -136,6 +151,8 @@ picture {
 
 /* footer styles */
 footer {
+  /* Carlos: The same max-width than main */
+  max-width: 480px;
   font-size: 11px;
   text-align: center;
 }
