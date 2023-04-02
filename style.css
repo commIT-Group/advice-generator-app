@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
 /* Developing / Debugging styles */
-*,
+/* *,
 *::before,
 *::after {
   outline: 1px solid papayawhip;
@@ -13,7 +13,7 @@ html {
 
 body {
   border: 2px solid blue;
-}
+} */
 /* END of developing / debugging styles */
 
 /* minimal CSS reset */
