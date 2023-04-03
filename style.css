@@ -115,7 +115,11 @@ h1 {
 #main-card p {
   color: var(--p-cyan);
   max-width: 30ch;
-  font-size: clamp(var(--fs-quote-m), calc(var(--fs-quote-m) + 0.1vi), var(--fs-quote-d));
+  font-size: clamp(
+    var(--fs-quote-m),
+    calc(var(--fs-quote-m) + 0.1vi),
+    var(--fs-quote-d)
+  );
   line-height: 1.6;
 
   /* Place it in the grid */
@@ -138,9 +142,9 @@ h1 {
   }
 } */
 
-/* Don't select images that are just website layout */
 #new-advice,
 picture {
+  /* Don't select images that are just website layout */
   -webkit-user-select: none;
   user-select: none;
 
