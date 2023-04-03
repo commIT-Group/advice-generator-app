@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
 /* Developing / Debugging styles */
-*,
+/* *,
 *::before,
 *::after {
   outline: 1px solid papayawhip;
@@ -13,7 +13,7 @@ html {
 
 body {
   border: 2px solid blue;
-}
+} */
 /* END of developing / debugging styles */
 
 /* minimal CSS reset */
@@ -35,25 +35,35 @@ body {
 }
 
 img,
-picture {
+picture,
+source {
   display: block;
   max-width: 100%;
 }
+
 /* end of minimal reset */
 
 /* variable declaration */
 :root {
   /* colors */
-  --p-cyan: hsl(193, 38%, 86%); /* short for primary: light cyan */
-  --p-green: hsl(150, 100%, 66%); /* short for primary: neon green */
-  --n-blue: hsl(217, 19%, 38%); /* neutral: greyish-blue */
-  --n-blue-gray-dark: hsl(217, 19%, 24%); /* neutral: dark greyish-blue */
-  --n-blue-dark: hsl(218, 23%, 16%); /* neutral: dark blue */
+  --p-cyan: hsl(193, 38%, 86%);
+  /* short for primary: light cyan */
+  --p-green: hsl(150, 100%, 66%);
+  /* short for primary: neon green */
+  --n-blue: hsl(217, 19%, 38%);
+  /* neutral: greyish-blue */
+  --n-blue-gray-dark: hsl(217, 19%, 24%);
+  /* neutral: dark greyish-blue */
+  --n-blue-dark: hsl(218, 23%, 16%);
+  /* neutral: dark blue */
 
   /* fonts */
-  --fs-quote-d: 1.75rem; /* font size: 28px on desktop */
-  --fs-quote-m: 1.5rem; /* font size: 24px on mobile */
-  --fs-title: 0.688rem; /* font size: 11px */
+  --fs-quote-d: 1.75rem;
+  /* font size: 28px on desktop */
+  --fs-quote-m: 1.5rem;
+  /* font size: 24px on mobile */
+  --fs-title: 0.688rem;
+  /* font size: 11px */
 }
 
 body {
@@ -75,31 +85,20 @@ body {
 
 main {
   padding: 0 1rem;
-  max-width: 480px;
-  height: 315px;
-}
-
-#main-card {
-  width: 100%;
-  height: 100%;
-  background-color: var(--n-blue-gray-dark);
-  display: grid;
-  place-items: center;
-  padding-top: 40px; /*change this to responsive units */
-  /* Carlos: I fix the main width and height instead */
-  /* width: 91.5vw; */
+  max-width: 580px;
   /* height: 315px; */
 }
 
-/* Carlos: It breaks the general layout */
-/* @media screen and (min-width: 700px) {
-  #main-card {
-    padding-top: 48px;
-    width: 37.5vw;
-    max-width: 540px;
-    height: 332px;
-  }
-} */
+#main-card {
+  background-color: var(--n-blue-gray-dark);
+  padding: 0 2rem;
+
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  /* Create rows to sit the elements and space them out */
+  grid-template-rows: 2rem 1rem 2rem 11rem 2rem 1rem 4rem;
+}
 
 h1 {
   /* font-family: inherit; unnecessary*/
@@ -108,21 +107,54 @@ h1 {
   text-transform: uppercase;
   line-height: 0.938rem;
   letter-spacing: 3.45714px;
+
+  /* Place it in the grid */
+  grid-row: 2 / 3;
 }
 
-p #advice {
+#main-card p {
+  color: var(--p-cyan);
+  max-width: 30ch;
+  font-size: clamp(
+    var(--fs-quote-m),
+    calc(var(--fs-quote-m) + 0.1vi),
+    var(--fs-quote-d)
+  );
+  line-height: 1.6;
+
+  /* Place it in the grid */
+  grid-row: 4 / 5;
+  text-align: center;
+}
+
+/* p #advice {
   color: var(--p-cyan);
   font-size: var(--fs-quote-m);
   line-height: 33px;
   letter-spacing: -0.257143px;
-}
+} */
 
-@media screen and (min-width: 700px) {
+/* @media screen and (min-width: 700px) {
   p #advice {
     font-size: var(--fs-quote-d);
     line-height: 38px;
     letter-spacing: -0.3px;
   }
+} */
+
+#new-advice,
+picture {
+  /* Don't select images that are just website layout */
+  -webkit-user-select: none;
+  user-select: none;
+
+  /* Place it in the grid */
+  grid-row: 6 / 7;
+
+  /* To center and wide the divider */
+  display: grid;
+  place-items: center;
+  justify-content: stretch;
 }
 
 #new-advice {
@@ -135,13 +167,11 @@ p #advice {
   display: grid;
   place-items: center;
   cursor: pointer;
-}
 
-/* Don't select images that are just website layout */
-#new-advice,
-picture {
-  -webkit-user-select: none;
-  user-select: none;
+  /* Place it in the grid */
+  grid-row: 7 / 8;
+  /* sit the dice in the middle of the bottom edge */
+  margin-top: 4rem;
 }
 
 #new-advice:hover,
