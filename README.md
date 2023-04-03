@@ -65,6 +65,7 @@ _Use this section to outline areas that you want to continue focusing on in futu
 - [Git branching strategy (Microsoft Documentation)](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops) - This article taught us best branching practices
 - [Code review on GitHub (LinearB)](https://linearb.io/blog/code-review-on-github/) - This well written, verbose article talks about best practices regarding code review on GitHub
 - [Pull request best practices (LinearB)](https://linearb.io/blog/pull-request-best-practices-our-tips/) - This article contains valuable information about how to make the best pull requests
+- [Box shadow generator (cssgenerator.pl)](https://cssgenerator.pl/en/box-shadow-generator/) - It's an easy to use tool for generating and visualizing box shadows
 
 ## Authors
 
