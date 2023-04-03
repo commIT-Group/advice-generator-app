@@ -68,17 +68,15 @@ _Use this section to outline areas that you want to continue focusing on in futu
 
 ## Authors
 
-_List the authors and links to their profiles_
-
 - [Carlos](https://github.com/car2t)
 - [Domi](https://github.com/WitchDevelops)
-<!-- * [James](https://github.com/RobJackTech) for now I commented out James, as I know he did some things but doesn't show up as contributor to the repo... -->
+- [James](https://github.com/RobJackTech)
 - [Logan](https://github.com/DevLoggith)
 - [Nikki](https://github.com/nikkehtine)
 - [Panos](https://github.com/panos0123)
 - [Phil](https://github.com/timiphil)
 - [Vance](https://github.com/caesiumtea)
 
-## Acknowledgments
+<!-- ## Acknowledgments
 
-_This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit._
+_This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit._ -->
