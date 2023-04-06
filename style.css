@@ -92,6 +92,7 @@ main {
 #main-card {
   background-color: var(--n-blue-gray-dark);
   padding: 0 2rem;
+  border-radius: 0.5rem;
 
   display: grid;
   place-items: center;
