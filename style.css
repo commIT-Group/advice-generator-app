@@ -188,10 +188,32 @@ footer {
   text-align: center;
   background-color: var(--n-blue-gray-dark);
   margin: 1rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
 }
 
 footer a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(150, 100%, 86%);
+  transition: all 0.25s ease;
+  text-decoration: none;
+
+  /* funky bg magic */
+  background: linear-gradient(
+      to right,
+      rgba(184, 255, 219, 1),
+      rgba(184, 255, 219, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+}
+
+footer a:hover {
+  background-size: 0% 2px, 100% 2px;
 }
