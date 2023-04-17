@@ -193,23 +193,23 @@ footer {
 }
 
 a.footer-link {
-  color: hsl(150, 100%, 86%);
+  --ft-color: hsl(150, 100%, 86%);
+
+  color: var(--ft-color);
   transition: all 0.25s ease;
   text-decoration: none;
 
   /* funky bg magic */
   /* it has to be two linear gradients, otherwise it won't work */
-  background: linear-gradient(
-      to right,
-      rgba(184, 255, 219, 1),
-      rgba(184, 255, 219, 1)
-    ),
-    linear-gradient(to right, var(--ft-color), var(--ft-color));
-  background-size: 100% 2px, 0 2px;
+  background: linear-gradient(to right, var(--ft-color), var(--ft-color)),
+    linear-gradient(to right, var(--ft-rand-color), var(--ft-rand-color));
+
+  background-size: 0% 2px, 0 2px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
 }
 
 a.footer-link:hover {
+  color: var(--ft-rand-color);
   background-size: 0% 2px, 100% 2px;
 }

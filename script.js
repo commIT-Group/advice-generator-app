@@ -34,7 +34,7 @@ footer.forEach((link) => {
 
 function randomizeColor() {
   let root = document.documentElement;
-  root.style.setProperty("--ft-color", getRandomColor());
+  root.style.setProperty("--ft-rand-color", getRandomColor());
 }
 
 function getRandomColor() {
