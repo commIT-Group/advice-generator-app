@@ -192,7 +192,7 @@ footer {
   border-radius: 0.5rem;
 }
 
-footer a {
+a.footer-link {
   color: hsl(150, 100%, 86%);
   transition: all 0.25s ease;
   text-decoration: none;
@@ -214,6 +214,6 @@ footer a {
   background-repeat: no-repeat;
 }
 
-footer a:hover {
+a.footer-link:hover {
   background-size: 0% 2px, 100% 2px;
 }
