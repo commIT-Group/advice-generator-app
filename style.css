@@ -213,3 +213,8 @@ a.footer-link:hover {
   color: var(--ft-rand-color);
   background-size: 0% 2px, 100% 2px;
 }
+
+a.footer-link:active {
+  color: var(--n-blue-dark);
+  background-size: 0% 2px, 100% 100%;
+}
