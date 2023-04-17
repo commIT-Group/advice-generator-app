@@ -198,17 +198,13 @@ a.footer-link {
   text-decoration: none;
 
   /* funky bg magic */
+  /* it has to be two linear gradients, otherwise it won't work */
   background: linear-gradient(
       to right,
       rgba(184, 255, 219, 1),
       rgba(184, 255, 219, 1)
     ),
-    linear-gradient(
-      to right,
-      rgba(255, 0, 0, 1),
-      rgba(255, 0, 180, 1),
-      rgba(0, 100, 200, 1)
-    );
+    linear-gradient(to right, var(--ft-color), var(--ft-color));
   background-size: 100% 2px, 0 2px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
