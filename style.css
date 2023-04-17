@@ -202,7 +202,7 @@ footer {
 }
 
 a.footer-link {
-  --ft-color: hsl(150, 100%, 86%);
+  --ft-color: hsl(150, 100%, 76%);
 
   color: var(--ft-color);
   transition: all 0.25s ease;
