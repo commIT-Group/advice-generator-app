@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
 
     <script src="script.js" defer></script>
@@ -18,38 +14,30 @@
   </head>
 
   <body>
-    <main>
-      <div id="main-card">
-        <h1>Advice #</h1>
-        <p id="advice">
-          <span id="advice-text"><!-- Advice text goes here --></span>
-        </p>
-        <picture>
-          <!-- used this element to change the displayed picture based on the screen width -->
-          <source
-            media="(min-width: 440px)"
-            srcset="./images/pattern-divider-desktop.svg"
-          />
-          <!-- display wider divider on desktop -->
-          <img src="./images/pattern-divider-mobile.svg" />
-          <!-- as a fallback, display the one that's more narrow -->
-        </picture>
-        <button id="new-advice">
-          <img src="./images/icon-dice.svg" alt="Get random advice" />
-        </button>
-      </div>
-    </main>
-
-    <footer>
+      <main>
+        <div id="main-card">
+          <h1>Advice #</h1>
+          <p id="advice">
+            <span id="advice-text"><!-- Advice text goes here --></span>
+          </p>
+          <picture>
+            <!-- used this element to change the displayed picture based on the screen width -->
+            <source media="(min-width: 440px)" srcset="./images/pattern-divider-desktop.svg" alt="" />
+            <!-- display wider divider on desktop -->
+            <img src="./images/pattern-divider-mobile.svg" alt="" />
+            <!-- as a fallback, display the one that's more narrow -->
+          </picture>
+          <button id="new-advice">
+            <img src="./images/icon-dice.svg" alt="Get random advice" />
+          </button>
+        </div>
+      </main>
+      
+      <footer>
       <p class="footer-text">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >.
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
       </p>
-      <p class="footer-text">
-        Coded by <a href="https://github.com/commIT-Group">commIT Group</a>.
-      </p>
+      <p class="footer-text">Coded by <a href="https://github.com/commIT-Group">commIT Group</a></p>
     </footer>
   </body>
 </html>
