@@ -128,6 +128,15 @@ h1 {
   text-align: center;
 }
 
+/* Add regular quotes to text advice */
+#advice-text::before {
+  content: open-quote;
+}
+
+#advice-text::after {
+  content: close-quote;
+}
+
 /* p #advice {
   color: var(--p-cyan);
   font-size: var(--fs-quote-m);

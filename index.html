@@ -22,16 +22,17 @@
       <div id="main-card">
         <h1>Advice #</h1>
         <p id="advice">
-          "<span id="advice-text"><!-- Advice text goes here --></span>"
+          <span id="advice-text"><!-- Advice text goes here --></span>
         </p>
         <picture>
           <!-- used this element to change the displayed picture based on the screen width -->
           <source
             media="(min-width: 440px)"
             srcset="./images/pattern-divider-desktop.svg"
+            alt=""
           />
           <!-- display wider divider on desktop -->
-          <img src="./images/pattern-divider-mobile.svg" />
+          <img src="./images/pattern-divider-mobile.svg" alt="" />
           <!-- as a fallback, display the one that's more narrow -->
         </picture>
         <button id="new-advice">
