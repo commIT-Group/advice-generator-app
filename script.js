@@ -22,3 +22,22 @@ function getAdvice() {
       console.error(error);
     });
 }
+
+// Color randomization
+footer = document.querySelectorAll(".footer-link");
+// Above returns an array-like object; we have to loop through it
+footer.forEach((link) => {
+  link.addEventListener("mouseenter", randomizeColor);
+});
+// https://bobbyhadz.com/blog/javascript-addeventlistener-is-not-a-function
+// https://flaviocopes.com/how-to-add-event-listener-multiple-elements-javascript/
+
+function randomizeColor() {
+  let root = document.documentElement;
+  root.style.setProperty("--ft-rand-color", getRandomColor());
+}
+
+function getRandomColor() {
+  let hue = Math.floor(Math.random() * 360);
+  return `hsl(${hue}, 100%, 76%)`;
+}

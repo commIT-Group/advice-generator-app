@@ -195,8 +195,35 @@ footer {
   max-width: 480px;
   font-size: 11px;
   text-align: center;
+  background-color: var(--n-blue-gray-dark);
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
-footer a {
-  color: hsl(228, 45%, 44%);
+a.footer-link {
+  --ft-color: hsl(150, 100%, 76%);
+
+  color: var(--ft-color);
+  transition: all 0.25s ease;
+  text-decoration: none;
+
+  /* funky bg magic */
+  /* it has to be two linear gradients, otherwise it won't work */
+  background: linear-gradient(to right, var(--ft-color), var(--ft-color)),
+    linear-gradient(to right, var(--ft-rand-color), var(--ft-rand-color));
+
+  background-size: 0% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+}
+
+a.footer-link:hover {
+  color: var(--ft-rand-color);
+  background-size: 0% 2px, 100% 2px;
+}
+
+a.footer-link:active {
+  color: var(--n-blue-dark);
+  background-size: 0% 2px, 100% 100%;
 }
