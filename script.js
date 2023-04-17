@@ -39,5 +39,5 @@ function randomizeColor() {
 
 function getRandomColor() {
   let hue = Math.floor(Math.random() * 360);
-  return "hsl(" + hue + ", 100%, 76%)";
+  return `hsl(${hue}, 100%, 76%)`;
 }
