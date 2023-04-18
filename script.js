@@ -38,9 +38,6 @@ function randomizeColor() {
 }
 
 function getRandomColor() {
-  let hue;
-  do {
-    hue = Math.floor(Math.random() * 360);
-  } while (hue >= 95 && hue <= 175);
+  let hue = Math.floor(Math.random() * 360);
   return `hsl(${hue}, 100%, 76%)`;
 }
