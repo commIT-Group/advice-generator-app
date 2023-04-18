@@ -42,7 +42,7 @@ function randomizeLinkColor() {
 }
 
 function randomizeAccentColor() {
-  root.style.setProperty("--p-green", getRandomColor());
+  root.style.setProperty("--accent", getRandomColor());
 }
 
 function getRandomColor() {
