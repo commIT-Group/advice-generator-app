@@ -46,10 +46,10 @@ source {
 /* variable declaration */
 :root {
   /* colors */
+  --accent: hsl(150, 100%, 66%);
+  /* initial accent color: neon green */
   --p-cyan: hsl(193, 38%, 86%);
   /* short for primary: light cyan */
-  --p-green: hsl(150, 100%, 66%);
-  /* short for primary: neon green */
   --n-blue: hsl(217, 19%, 38%);
   /* neutral: greyish-blue */
   --n-blue-gray-dark: hsl(217, 19%, 24%);
@@ -103,7 +103,7 @@ main {
 
 h1 {
   /* font-family: inherit; unnecessary*/
-  color: var(--p-green);
+  color: var(--accent);
   font-size: var(--fs-title);
   text-transform: uppercase;
   line-height: 0.938rem;
@@ -168,7 +168,7 @@ picture {
 }
 
 #new-advice {
-  background-color: var(--p-green);
+  background-color: var(--accent);
   border: 0;
   padding: 0;
   width: 64px;
@@ -186,7 +186,7 @@ picture {
 
 #new-advice:hover,
 #new-advice:active {
-  box-shadow: 0px 0px 40px var(--p-green);
+  box-shadow: 0px 0px 40px var(--accent);
 }
 
 /* footer styles */
@@ -202,15 +202,13 @@ footer {
 }
 
 a.footer-link {
-  --ft-color: hsl(150, 100%, 76%);
-
-  color: var(--ft-color);
+  color: var(--accent);
   transition: all 0.25s ease;
   text-decoration: none;
 
   /* funky bg magic */
   /* it has to be two linear gradients, otherwise it won't work */
-  background: linear-gradient(to right, var(--ft-color), var(--ft-color)),
+  background: linear-gradient(to right, var(--accent), var(--accent)),
     linear-gradient(to right, var(--ft-rand-color), var(--ft-rand-color));
 
   background-size: 0% 2px, 0 2px;
