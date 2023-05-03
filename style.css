@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
-/* Developing / Debugging styles */
-/* *,
-*::before,
-*::after {
-  outline: 1px solid papayawhip;
-}
-
-html {
-  border: 2px solid gold;
-}
-
-body {
-  border: 2px solid blue;
-} */
-/* END of developing / debugging styles */
-
 /* minimal CSS reset */
 *,
 *::before,
@@ -136,21 +120,6 @@ h1 {
   content: close-quote;
 }
 
-/* p #advice {
-  color: var(--p-cyan);
-  font-size: var(--fs-quote-m);
-  line-height: 33px;
-  letter-spacing: -0.257143px;
-} */
-
-/* @media screen and (min-width: 700px) {
-  p #advice {
-    font-size: var(--fs-quote-d);
-    line-height: 38px;
-    letter-spacing: -0.3px;
-  }
-} */
-
 #new-advice,
 picture {
   /* Don't select images that are just website layout */
@@ -196,13 +165,14 @@ a.footer-link {
 /* footer styles */
 footer {
   /* Carlos: The same max-width than main */
-  max-width: 480px;
-  font-size: 11px;
-  text-align: center;
   background-color: var(--n-blue-gray-dark);
-  margin: 1rem;
-  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  font-size: var(--fs-title);
+  letter-spacing: 0.01ch;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1.2rem;
+  text-align: start;
 }
 
 a.footer-link {
