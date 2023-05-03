@@ -73,9 +73,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
   gap: 5rem;
-  /* Carlos: Why we need this position: relative;? */
-  /* position: relative; */
-
+ 
   /* visual */
   font-family: "Manrope", sans-serif;
   font-weight: 800;
@@ -85,8 +83,9 @@ body {
 
 main {
   padding: 0 1rem;
-  max-width: 580px;
-  /* height: 315px; */
+  display: grid;
+  grid-template: minmax(347px, 364px) / minmax(343px, 540px);
+  place-content: center center;
 }
 
 #main-card {
